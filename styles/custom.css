@@ -77,11 +77,38 @@ body {
 #info{
     color: black;
     font-weight: 500;
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem ;
     text-align: center;
 }
 
-/* #services-container{} */
+#services-container{
+    padding: 2rem;
+    background-color: var(--secondary-Color);
+    width: 100%;
+    display: var(--display2);
+}
+
+#services-container > :first-child{
+    color: rgba(0, 0, 0, 0.670);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#services-container #services1,#services2,#services3{
+    color: rgba(0, 0, 0, 0.570);
+    transform: scale(1);
+    transition: all 1s;
+}
+#services-container #services1:hover,#services2:hover,#services3:hover{
+    background-color: white;
+    transform: scale(1.05);
+    transition: all 1s;
+    margin: 1rem 0;
+    padding: 1.25rem;
+    border-radius: 5px;
+}
+
+
 
 @media (max-width: 300px) {
     #side-btn > i {
