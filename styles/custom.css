@@ -48,6 +48,10 @@ body {
     width: var(--body-width);
 }
 
+nav{
+    background-color: rgb(65, 65, 65);
+    z-index: 20;
+}
 /* WELCOME DESIGN */
 #welcome-container {
     /* background-color: var(--principal-Color); */
@@ -55,12 +59,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    margin: var(--margin-null);
+    margin-top: var(--margin-null);
     padding: 3rem 0 3rem 0;
     text-align: center;
     width: 100%;
 }
 #welcome-container :nth-child(odd) {
+    margin-top: 2rem;
     color: var(--principal2-Color);
     font-weight: bold;
     text-shadow: 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a,
@@ -74,7 +79,7 @@ body {
     margin: 0 3rem;
 }
 
-#info{
+.info{
     color: black;
     font-weight: 500;
     margin: 1rem ;
@@ -100,7 +105,7 @@ body {
     transition: all 1s;
 }
 #services-container #services1:hover,#services2:hover,#services3:hover{
-    background-color: white;
+    background-color: var(--secondary2-Color);
     transform: scale(1.05);
     transition: all 1s;
     margin: 1rem 0;
@@ -159,6 +164,10 @@ body {
         font-size: var(--font2-size);
     }
     #info{
+        font-size: var(--font1-1-size);
+    }
+
+    #services-container #services1,#services2,#services3{
         font-size: var(--font1-1-size);
     }
 }

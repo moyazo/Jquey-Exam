@@ -32,84 +32,213 @@
         <title>NATURAL SOAP</title>
     </head>
     <body>
-        <div id="app">
-            <button
-                id="side-btn"
-                class="btn btn-primary"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#Id2"
-                aria-controls="Id2"
-            >
-                <i class="bi bi-caret-right-square-fill"></i>
-            </button>
-
-            <div
-                class="offcanvas offcanvas-start"
-                data-bs-backdrop="static"
-                tabindex="-1"
-                id="Id2"
-                aria-labelledby="staticBackdropLabel"
-            >
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="staticBackdropLabel">
-                        NATURAL SOAP
-                    </h5>
-                    <button
-                        type="button"
-                        class="btn btn-none"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                    >
-                        <i class="bi bi-caret-left-square-fill"></i>
-                    </button>
-                </div>
-                <div class="offcanvas-body">
-                    <div>I will not close if you click outside of me.</div>
+        <!-- <i class="bi bi-caret-right-square-fill"></i> -->
+        <!-- <i class="bi bi-caret-left-square-fill"></i> -->
+        <nav
+            class="navbar navbar-expand-sm navbar-dark position-fixed w-100"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                href="#"
+                                aria-current="page"
+                                >Home
+                                <span class="visually-hidden"
+                                    >(current)</span
+                                ></a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Dropdown</a
+                            >
+                            <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownId"
+                            >
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input
+                            class="form-control me-sm-2"
+                            type="text"
+                            placeholder="Search"
+                        />
+                        <button
+                            class="btn btn-outline-success my-2 my-sm-0"
+                            type="submit"
+                        >
+                            Search
+                        </button>
+                    </form>
                 </div>
             </div>
-
+        </nav>
+        <div id="app">
             <div id="welcome-container">
                 <div id="welcome-text">
-                    <h1 id="welcome-title">Natural Soap</h1>
+                    <h1 id="welcome-title">WELCOME</h1>
                     <h6 id="welcome-subtitle">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ex, sequi?
+                        Natural Soap
                     </h6>
                 </div>
             </div>
             <div id="pepe">
-                <p id="info">Nuestros jabones naturales están elaborados artesanalmente mediante el proceso tradicional de saponificación en frío, conservando así en el jabón las propiedades de sus ingredientes. Están formulados con ingredientes naturales y ecológicos cuidadosamente seleccionados y de la más alta calidad y sostenibilidad.</p>
+                <p class="info">
+                    Nuestros jabones naturales están elaborados artesanalmente
+                    mediante el proceso tradicional de saponificación en frío,
+                    conservando así en el jabón las propiedades de sus
+                    ingredientes. Están formulados con ingredientes naturales y
+                    ecológicos cuidadosamente seleccionados y de la más alta
+                    calidad y sostenibilidad.
+                </p>
             </div>
             <div id="services-container">
                 <h3>Services</h3>
                 <div id="services1">
                     <h4>100% Natural</h4>
                     <p>
-                        Solo ingredientes naturales
-                        Participan ingredientes ecológicos
-                        Libre de tóxicos
-                        Sin ingredientes de origen petroquímico
+                        Solo ingredientes naturales Participan ingredientes
+                        ecológicos Libre de tóxicos Sin ingredientes de origen
+                        petroquímico
                     </p>
                 </div>
                 <div id="services2">
                     <h4>Fórmula Propia</h4>
                     <p>
-                        Formulaciones muy cuidadas con principios activos 100% naturales de alta calidad y sostenibilidad
-                        Composiciones cosméticas indicadas para pieles delicadas y muy sensibles 
-                        Respetuosas con el medio ambiente
+                        Formulaciones muy cuidadas con principios activos 100%
+                        naturales de alta calidad y sostenibilidad Composiciones
+                        cosméticas indicadas para pieles delicadas y muy
+                        sensibles Respetuosas con el medio ambiente
                     </p>
                 </div>
                 <div id="services3">
                     <h4>Zero Waste</h4>
                     <p>
-                        Estuches de cartón producidos a partir de recursos 100% naturales y sostenibles
-                        Papel | Cartón reciclables con certificados FSC (Gestión Forestal Responsable)
+                        Estuches de cartón producidos a partir de recursos 100%
+                        naturales y sostenibles Papel | Cartón reciclables con
+                        certificados FSC (Gestión Forestal Responsable)
                         Embalajes y envíos EcoResponsables
                     </p>
                 </div>
             </div>
-            <div id="aboutUs-container"></div>
+            <div id="pepe">
+                <p class="info">
+                    Somos una empresa de jabones tradicionales la cual quiere
+                    que nuestros clientes experimenten la mayor comodidad
+                    posible.
+                    <br />
+                    Para ello buscamos que nuestros productos sean lo mejor de
+                    lo mejor como en funcionalidad como en protección.
+                    <br />
+                    Nuestro productos son 100% naturales y no hay ni una pizca
+                    de elemento que sea malo para la piel de nuestros clientes.
+                </p>
+            </div>
+            <div id="products-container">
+                <div
+                    id="carouselId"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <ol class="carousel-indicators">
+                        <li
+                            data-bs-target="#carouselId"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="First slide"
+                        ></li>
+                        <li
+                            data-bs-target="#carouselId"
+                            data-bs-slide-to="1"
+                            aria-label="Second slide"
+                        ></li>
+                        <li
+                            data-bs-target="#carouselId"
+                            data-bs-slide-to="2"
+                            aria-label="Third slide"
+                        ></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active product">
+                            <h5>Pack Rosa Mosqueta, Lavanda, Aloe y Karité</h5>
+                            <img
+                                src="./assets/pack1.jpg"
+                                class="w-100 d-block"
+                                alt="First slide"
+                            />
+                        </div>
+                        <div class="carousel-item product">
+                            <h5>Pack Rosa Mosqueta, Aceite de Argán, Lavanda</h5>
+                            <img
+                                src="./assets/pack2.jpg"
+                                class="w-100 d-block"
+                                alt="Second slide"
+                            />
+                        </div>
+                        <div class="carousel-item product">
+                            <h5>Pack Rosa Mosqueta, Oliva y Arcilla, Lavanda</h5>
+                            <img
+                                src="./assets/pack3.jpg"
+                                class="w-100 d-block"
+                                alt="Third slide"
+                            />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselId"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
             <div id="footer-container"></div>
             <!-- <div id="contact-container"></div> on sidebar -->
         </div>
