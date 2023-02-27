@@ -1,12 +1,4 @@
 "use strict"
-// window.addEventListener('load',() => {
-//     $("#app").hide();
-//     $("#loader").show();
-//     setTimeout(() => {
-//         $("#app").show();
-//         $("#loader").hide();
-//     },2000)
-// });
 $("#app").hide();
 $("#loader").show();
 $( window ).ready(function(){
@@ -14,9 +6,12 @@ $( window ).ready(function(){
                 $("#app").show();
                 $("#loader").hide();
             },2000)
-});
+});+
 
 $(document).ready(function(){
+    $(".form").click(function(){
+        confirm("THIS FORM IS DISABLE")
+    });
     $(".btn1").click(function(){
         $(".btn2").hide();
         $(".btn3").hide();
