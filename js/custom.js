@@ -9,7 +9,7 @@
 // });
 $("#app").hide();
 $("#loader").show();
-$( document ).ready(function(){
+$( window ).ready(function(){
     setTimeout(() => {
                 $("#app").show();
                 $("#loader").hide();
