@@ -30,6 +30,16 @@
     position: fixed;
     transition: all 1s ease-out;
 }
+
+#loader{
+    width: var(--body-width);
+    height: var(--body-height);
+    display: var(--display1);
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* 
 #side-btn:hover{
     opacity: 100%;
