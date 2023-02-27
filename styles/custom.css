@@ -1,5 +1,5 @@
 /* GENERAL ATTRIBUTES */
-:root{
+:root {
     --body-height: 100vh;
     --body-width: 100vw;
     --card1-width: 90%;
@@ -15,16 +15,16 @@
     --font4-size: 4rem;
     --font5-size: 5rem;
     --margin-null: 0;
-    --neutral-Color: #F8EDEB;
+    --neutral-Color: #f8edeb;
     --padding-null: 0;
-    --principal-Color: #FFB5A7;
-    --principal2-Color: #FCD5CE;
-    --secondary-Color: #FEC89A;
-    --secondary2-Color: #F9DCC4;
+    --principal-Color: #ffb5a7;
+    --principal2-Color: #fcd5ce;
+    --secondary-Color: #fec89a;
+    --secondary2-Color: #f9dcc4;
 }
 
-#side-btn{
-    background-color:  rgba(255, 0, 0, 0);
+#side-btn {
+    background-color: rgba(255, 0, 0, 0);
     border: 0;
     opacity: 100%;
     position: fixed;
@@ -36,11 +36,11 @@
     transition: all 1s ease-out; for PC media
 } */
 
-#side-btn > i{
+#side-btn > i {
     color: var(--neutral-Color);
 }
 /* BODY DESIGN */
-body{
+body {
     background-color: var(--neutral-Color);
     height: var(--body-height);
     margin: var(--margin-null);
@@ -48,11 +48,10 @@ body{
     width: var(--body-width);
 }
 
-
 /* WELCOME DESIGN */
-#welcome-container{
+#welcome-container {
     /* background-color: var(--principal-Color); */
-    background: url('../assets/spa-soap-lavender-salt-coffee.jpg');
+    background: url("../assets/spa-soap-lavender-salt-coffee.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -60,79 +59,101 @@ body{
     padding: 3rem 0 3rem 0;
     text-align: center;
     width: 100%;
-
 }
-#welcome-container :nth-child(odd){
+#welcome-container :nth-child(odd) {
     color: var(--principal2-Color);
     font-weight: bold;
-    text-shadow: 0 0 .5rem #d0877a,0 0 .5rem #d0877a,0 0 .5rem #d0877a,0 0 .5rem #d0877a;
+    text-shadow: 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a,
+        0 0 0.5rem #d0877a;
 }
-#welcome-container :nth-child(2){
+#welcome-container :nth-child(2) {
     color: var(--neutral-Color);
-    text-shadow: 0 0 .5rem #d0877a,0 0 .5rem #d0877a,0 0 .5rem #d0877a,0 1rem .5rem #d0877a,0 1rem .5rem #d0877a,0 1rem .5rem #d0877a;
+    text-shadow: 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a,
+        0 1rem 0.5rem #d0877a, 0 1rem 0.5rem #d0877a, 0 1rem 0.5rem #d0877a;
     font-weight: 600;
     margin: 0 3rem;
 }
 
+#info{
+    color: black;
+    font-weight: 500;
+    margin: 1rem 1rem 0 1rem;
+    text-align: center;
+}
 
-@media (max-width: 300px){
-    #side-btn > i{
+/* #services-container{} */
+
+@media (max-width: 300px) {
+    #side-btn > i {
         font-size: var(--font1-1-size);
     }
-    #welcome-container :nth-child(odd){
+    #welcome-container :nth-child(odd) {
         font-size: var(--font2-size);
     }
-    #welcome-container :nth-child(2){
-        text-shadow: 0 0 .5rem #d0877a,0 0 .5rem #d0877a,0 0 .5rem #d0877a;
+    #welcome-container :nth-child(2) {
+        text-shadow: 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a;
         font-size: var(--font1-size);
     }
 }
-@media (min-width: 400px){
-    #side-btn > i{
+@media (min-width: 400px) {
+    #side-btn > i {
         font-size: var(--font1-1-size);
     }
-    #welcome-container :nth-child(odd){
+    #welcome-container :nth-child(odd) {
         font-size: var(--font3-size);
     }
-    #welcome-container :nth-child(2){
+    #welcome-container :nth-child(2) {
         font-size: var(--font1-1-size);
     }
 }
 
-@media (min-width: 500px){
-    #side-btn > i{
+@media (min-width: 500px) {
+    #side-btn > i {
         font-size: var(--font1-1-size);
     }
-    #welcome-container :nth-child(odd){
+    #welcome-container :nth-child(odd) {
         font-size: var(--font3-size);
     }
-    #welcome-container :nth-child(2){
-        text-shadow: 0 0 .5rem #d0877a,0 0 .5rem #d0877a,0 0 .5rem #d0877a,0 1rem .5rem #d0877a;
+    #welcome-container :nth-child(2) {
+        text-shadow: 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a,
+            0 1rem 0.5rem #d0877a;
         font-size: var(--font1-1-size);
     }
 }
 
-@media (min-width: 750px){
-    #side-btn > i{
+@media (min-width: 750px) {
+    #side-btn > i {
         font-size: var(--font1-1-size);
     }
-    #welcome-container :nth-child(odd){
+    #welcome-container :nth-child(odd) {
         font-size: var(--font4-size);
     }
-    #welcome-container :nth-child(2){
+    #welcome-container :nth-child(2) {
         font-size: var(--font2-size);
     }
+    #info{
+        font-size: var(--font1-1-size);
+    }
 }
 
-@media (min-width: 1024px){
-    #side-btn > i{
+@media (min-width: 1024px) {
+    #side-btn > i {
         font-size: var(--font1-1-size);
     }
-    #welcome-container :nth-child(odd){
+    #welcome-container :nth-child(odd) {
         font-size: var(--font4-size);
     }
-    #welcome-container :nth-child(2){
-        text-shadow: 0 0 .5rem #d0877a,0 0 .5rem #d0877a,0 0 .5rem #d0877a,0 1rem .5rem #d0877a,0 1rem .5rem #d0877a;
+    #welcome-container :nth-child(2) {
+        text-shadow: 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a,
+            0 1rem 0.5rem #d0877a, 0 1rem 0.5rem #d0877a;
         font-size: var(--font1-1-size);
+    }
+    #pepe{
+        display: var(--display1);
+        flex-flow: column;
+        align-items: center;
+    }
+    #info{
+        width: 80%;
     }
 }
