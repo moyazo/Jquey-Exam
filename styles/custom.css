@@ -31,7 +31,7 @@
     transition: all 1s ease-out;
 }
 
-#loader{
+#loader {
     width: var(--body-width);
     height: var(--body-height);
     display: var(--display1);
@@ -121,7 +121,9 @@ nav {
     transform: scale(1);
     transition: all 1s;
 }
-#services1 p,#services2 p,#services3 p{
+#services1 p,
+#services2 p,
+#services3 p {
     font-size: 1.25rem;
 }
 
@@ -216,16 +218,16 @@ footer {
     #welcome-container :nth-child(2) {
         font-size: var(--font2-size);
     }
-    #services-container .btn:hover{
+    #services-container .btn:hover {
         background-color: var(--neutral-Color);
         transform: scale(1.05);
         transition: all 1s;
-        margin: 0 1rem ;
+        margin: 0 1rem;
         padding: 1.25rem;
         border-radius: 5px;
     }
 
-    .pepe{
+    .pepe {
         display: flex;
         flex-flow: column;
         justify-content: center;
@@ -282,11 +284,10 @@ footer {
         font-size: var(--font2-size);
     }
 
-    #services{
+    #services {
         display: flex;
         flex-flow: row;
         justify-content: center;
         align-items: center;
     }
-    
 }
