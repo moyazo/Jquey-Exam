@@ -34,9 +34,7 @@
     <body>
         <!-- <i class="bi bi-caret-right-square-fill"></i> -->
         <!-- <i class="bi bi-caret-left-square-fill"></i> -->
-        <nav
-            class="navbar navbar-expand-sm navbar-dark position-fixed w-100"
-        >
+        <nav class="navbar navbar-expand-sm navbar-light position-fixed w-100">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button
@@ -64,7 +62,9 @@
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#services-container"
+                                >Services</a
+                            >
                         </li>
                         <li class="nav-item dropdown">
                             <a
@@ -80,8 +80,12 @@
                                 class="dropdown-menu"
                                 aria-labelledby="dropdownId"
                             >
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                                <a
+                                    class="dropdown-item"
+                                    href="#products-container"
+                                    >Products</a
+                                >
+                                <a class="dropdown-item" href="#">CONTACT</a>
                             </div>
                         </li>
                     </ul>
@@ -104,14 +108,12 @@
         <div id="app">
             <div id="welcome-container">
                 <div id="welcome-text">
-                    <h1 id="welcome-title">WELCOME</h1>
-                    <h6 id="welcome-subtitle">
-                        Natural Soap
-                    </h6>
+                    <h1 id="welcome-title">Natural Soap</h1>
+                    <h6 id="welcome-subtitle">WELCOME</h6>
                 </div>
             </div>
-            <div id="pepe">
-                <p class="info">
+            <div class="pepe">
+                <p class="info text-light">
                     Nuestros jabones naturales están elaborados artesanalmente
                     mediante el proceso tradicional de saponificación en frío,
                     conservando así en el jabón las propiedades de sus
@@ -121,35 +123,209 @@
                 </p>
             </div>
             <div id="services-container">
-                <h3>Services</h3>
-                <div id="services1">
-                    <h4>100% Natural</h4>
-                    <p>
-                        Solo ingredientes naturales Participan ingredientes
-                        ecológicos Libre de tóxicos Sin ingredientes de origen
-                        petroquímico
-                    </p>
+                <h3 class="text-center">Services</h3>
+                <div id="services">
+                    <button
+                        type="button"
+                        class="btn btn1 btn-lg"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalId"
+                    >
+                    100% Natural
+                    </button>
+
+                    <!-- Modal Body -->
+                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                    <div
+                        class="modal fade"
+                        id="modalId"
+                        tabindex="-1"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        role="dialog"
+                        aria-labelledby="modalTitleId"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTitleId">
+                                        Modal title
+                                    </h5>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body"><div id="services1">
+                                    <h4>100% Natural</h4>
+                                    <p>
+                                        Solo ingredientes naturales Participan ingredientes
+                                        ecológicos Libre de tóxicos Sin ingredientes de origen
+                                        petroquímico
+                                    </p>
+                                </div></div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        type="button"
+                        class="btn btn2 btn-lg"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalId2"
+                    >
+                    Fórmula Propia
+                    </button>
+
+                    <!-- Modal Body -->
+                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                    <div
+                        class="modal fade"
+                        id="modalId2"
+                        tabindex="-1"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        role="dialog"
+                        aria-labelledby="modalTitleId"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTitleId">
+                                        Modal title
+                                    </h5>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body"><div id="services2">
+                                    <h4>Fórmula Propia</h4>
+                                    <p>
+                                        Formulaciones muy cuidadas con principios activos 100%
+                                        naturales de alta calidad y sostenibilidad Composiciones
+                                        cosméticas indicadas para pieles delicadas y muy
+                                        sensibles Respetuosas con el medio ambiente
+                                    </p>
+                                </div></div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        type="button"
+                        class="btn btn3 btn-lg"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalId3"
+                    >
+                    Zero Waste
+                    </button>
+
+                    <!-- Modal Body -->
+                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                    <div
+                        class="modal fade"
+                        id="modalId3"
+                        tabindex="-1"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        role="dialog"
+                        aria-labelledby="modalTitleId"
+                        aria-hidden="true"
+                    >
+                        <div
+                            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                            role="document"
+                        >
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalTitleId">
+                                        Modal title
+                                    </h5>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="modal-body"><div id="services3">
+                                    <h4>Zero Waste</h4>
+                                    <p>
+                                        Estuches de cartón producidos a partir de recursos 100%
+                                        naturales y sostenibles Papel | Cartón reciclables con
+                                        certificados FSC (Gestión Forestal Responsable)
+                                        Embalajes y envíos EcoResponsables
+                                    </p>
+                                </div></div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-bs-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                    >
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="services2">
-                    <h4>Fórmula Propia</h4>
-                    <p>
-                        Formulaciones muy cuidadas con principios activos 100%
-                        naturales de alta calidad y sostenibilidad Composiciones
-                        cosméticas indicadas para pieles delicadas y muy
-                        sensibles Respetuosas con el medio ambiente
-                    </p>
-                </div>
-                <div id="services3">
-                    <h4>Zero Waste</h4>
-                    <p>
-                        Estuches de cartón producidos a partir de recursos 100%
-                        naturales y sostenibles Papel | Cartón reciclables con
-                        certificados FSC (Gestión Forestal Responsable)
-                        Embalajes y envíos EcoResponsables
-                    </p>
-                </div>
+                <!-- Optional: Place to the bottom of scripts -->
+                <script>
+                    const myModal = new bootstrap.Modal(
+                        document.getElementById("modalId"),
+                        options
+                    );
+                </script>
             </div>
-            <div id="pepe">
+            <div class="pepe">
                 <p class="info">
                     Somos una empresa de jabones tradicionales la cual quiere
                     que nuestros clientes experimenten la mayor comodidad
@@ -192,23 +368,27 @@
                             <h5>Pack Rosa Mosqueta, Lavanda, Aloe y Karité</h5>
                             <img
                                 src="./assets/pack1.jpg"
-                                class="w-100 d-block"
+                                class="d-block"
                                 alt="First slide"
                             />
                         </div>
                         <div class="carousel-item product">
-                            <h5>Pack Rosa Mosqueta, Aceite de Argán, Lavanda</h5>
+                            <h5>
+                                Pack Rosa Mosqueta, Aceite de Argán, Lavanda
+                            </h5>
                             <img
                                 src="./assets/pack2.jpg"
-                                class="w-100 d-block"
+                                class="d-block"
                                 alt="Second slide"
                             />
                         </div>
                         <div class="carousel-item product">
-                            <h5>Pack Rosa Mosqueta, Oliva y Arcilla, Lavanda</h5>
+                            <h5>
+                                Pack Rosa Mosqueta, Oliva y Arcilla, Lavanda
+                            </h5>
                             <img
                                 src="./assets/pack3.jpg"
-                                class="w-100 d-block"
+                                class="d-block"
                                 alt="Third slide"
                             />
                         </div>
@@ -239,7 +419,52 @@
                     </button>
                 </div>
             </div>
-            <div id="footer-container"></div>
+            <div id="footer-container">
+                <footer class="text-center text-lg-start">
+                    <div class="container d-flex justify-content-center py-5">
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg btn-floating mx-2"
+                            style="background-color: #54456b"
+                        >
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg btn-floating mx-2"
+                            style="background-color: #54456b"
+                        >
+                            <i class="fab fa-youtube"></i>
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg btn-floating mx-2"
+                            style="background-color: #54456b"
+                        >
+                            <i class="fab fa-instagram"></i>
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary btn-lg btn-floating mx-2"
+                            style="background-color: #54456b"
+                        >
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div
+                        class="text-center text-white p-3"
+                        style="background-color: rgba(0, 0, 0, 0.2)"
+                    >
+                        © 2020 Copyright:
+                        <a class="text-white" href="https://mdbootstrap.com/"
+                            >MDBootstrap.com</a
+                        >
+                    </div>
+                    <!-- Copyright -->
+                </footer>
+            </div>
             <!-- <div id="contact-container"></div> on sidebar -->
         </div>
     </body>

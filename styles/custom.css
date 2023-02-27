@@ -41,79 +41,116 @@
 }
 /* BODY DESIGN */
 body {
-    background-color: var(--neutral-Color);
-    height: var(--body-height);
+    background: url("../assets/spa-soap-lavender-salt-coffee.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    height: 121vh;
     margin: var(--margin-null);
     padding: var(--padding-null);
     width: var(--body-width);
+    overflow-x: hidden;
 }
-
-nav{
-    background-color: rgb(65, 65, 65);
+nav {
+    background-color: var(--principal-Color);
     z-index: 20;
+    font-size: 1.5rem;
 }
 /* WELCOME DESIGN */
 #welcome-container {
-    /* background-color: var(--principal-Color); */
-    background: url("../assets/spa-soap-lavender-salt-coffee.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
+    background-color: var(--neutral-Color);
     margin-top: var(--margin-null);
     padding: 3rem 0 3rem 0;
     text-align: center;
     width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
 }
 #welcome-container :nth-child(odd) {
     margin-top: 2rem;
-    color: var(--principal2-Color);
+    padding-bottom: 3rem;
     font-weight: bold;
-    text-shadow: 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a,
-        0 0 0.5rem #d0877a;
 }
 #welcome-container :nth-child(2) {
-    color: var(--neutral-Color);
-    text-shadow: 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a, 0 0 0.5rem #d0877a,
-        0 1rem 0.5rem #d0877a, 0 1rem 0.5rem #d0877a, 0 1rem 0.5rem #d0877a;
     font-weight: 600;
     margin: 0 3rem;
 }
 
-.info{
-    color: black;
-    font-weight: 500;
-    margin: 1rem ;
+#welcome-text {
+    width: 70%;
     text-align: center;
 }
 
-#services-container{
+.info {
+    text-shadow: 0 0 0.5rem var(--principal-Color),
+        0 0 0.5rem var(--principal-Color), 0 0 0.5rem var(--principal-Color),
+        0 0 0.5rem var(--principal-Color);
+    font-weight: 500;
+    margin: 1rem;
+    text-align: center;
+}
+
+#services-container {
     padding: 2rem;
     background-color: var(--secondary-Color);
     width: 100%;
     display: var(--display2);
 }
 
-#services-container > :first-child{
-    color: rgba(0, 0, 0, 0.670);
+#services-container > :first-child {
+    color: rgba(0, 0, 0, 0.67);
     font-weight: bold;
     margin-bottom: 2rem;
 }
 
-#services-container #services1,#services2,#services3{
-    color: rgba(0, 0, 0, 0.570);
+#services-container .btn {
+    color: rgba(0, 0, 0, 0.57);
     transform: scale(1);
     transition: all 1s;
 }
-#services-container #services1:hover,#services2:hover,#services3:hover{
-    background-color: var(--secondary2-Color);
-    transform: scale(1.05);
-    transition: all 1s;
-    margin: 1rem 0;
-    padding: 1.25rem;
-    border-radius: 5px;
+#services1 p,#services2 p,#services3 p{
+    font-size: 1.25rem;
 }
 
+.btn1 {
+    background-image: url("../assets/service1.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 20rem;
+}
+.btn2 {
+    background-image: url("../assets/service2.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 20rem;
+}
+.btn3 {
+    background-image: url("../assets/service3.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 20rem;
+}
+.product img {
+    margin: auto;
+    width: 80%;
+}
 
+#products-container {
+    background-color: var(--secondary2-Color);
+}
+
+footer {
+    background-color: var(--principal-Color);
+}
 
 @media (max-width: 300px) {
     #side-btn > i {
@@ -132,7 +169,7 @@ nav{
         font-size: var(--font1-1-size);
     }
     #welcome-container :nth-child(odd) {
-        font-size: var(--font3-size);
+        font-size: var(--font2-size);
     }
     #welcome-container :nth-child(2) {
         font-size: var(--font1-1-size);
@@ -154,8 +191,14 @@ nav{
 }
 
 @media (min-width: 750px) {
+    body {
+        height: 75vh;
+    }
     #side-btn > i {
         font-size: var(--font1-1-size);
+    }
+    #welcome-container {
+        padding-top: 3.5rem;
     }
     #welcome-container :nth-child(odd) {
         font-size: var(--font4-size);
@@ -163,16 +206,41 @@ nav{
     #welcome-container :nth-child(2) {
         font-size: var(--font2-size);
     }
-    #info{
-        font-size: var(--font1-1-size);
+    #services-container .btn:hover{
+        background-color: var(--neutral-Color);
+        transform: scale(1.05);
+        transition: all 1s;
+        margin: 0 1rem ;
+        padding: 1.25rem;
+        border-radius: 5px;
     }
 
-    #services-container #services1,#services2,#services3{
-        font-size: var(--font1-1-size);
+    .pepe{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info {
+        width: 80%;
+        color: black;
+        font-weight: 500;
+        margin: 1rem;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    #services-container #services1,
+    #services2,
+    #services3 {
+        font-size: var(--font2-size);
     }
 }
 
 @media (min-width: 1024px) {
+    body {
+        height: 121vh;
+    }
     #side-btn > i {
         font-size: var(--font1-1-size);
     }
@@ -184,12 +252,31 @@ nav{
             0 1rem 0.5rem #d0877a, 0 1rem 0.5rem #d0877a;
         font-size: var(--font1-1-size);
     }
-    #pepe{
+
+    #services-container {
+        padding: 4rem;
+    }
+    .pepe {
         display: var(--display1);
         flex-flow: column;
         align-items: center;
+        justify-content: center;
     }
-    #info{
+    .info {
+        height: 20rem;
         width: 80%;
+        display: var(--display1);
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--font2-size);
     }
+
+    #services{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
